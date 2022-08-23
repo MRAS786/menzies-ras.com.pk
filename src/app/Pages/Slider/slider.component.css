@@ -1,0 +1,33 @@
+.carousel-caption {
+    position: absolute;
+    right: 70%;
+    bottom:9.25rem;
+    left: 8%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.hero-slider__heading--large {
+    font-size: 41.2px;
+    font-weight: 900;
+    line-height: 1.05em;
+    color: #1e3669;
+    margin-right: 70px;
+    line-height: 1em;
+}
+.card{
+    border-radius: 0 !important;
+}
+.sliderheading{
+    line-height: 0.933em;
+    color: #acacac;
+    font-weight: 400;
+    margin-bottom: 0
+}
+.pmr{
+    margin-right:88px;
+}
+.prmr{
+    margin-right:129px;
+}

@@ -1,0 +1,161 @@
+  <!-- Responsive Menu For Mobile Device -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mblshow">
+    <a class="navbar-brand" href="#">
+        <img class="imgCLass" src="../../../../assets/Slider/menziesHeaderlogo.jpg" alt="site logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left:70px">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+        <ul id="construct_navigation">
+            <li class="nav-link" *ngFor="let p of categoryModelResponse">
+                <a (click)="changeRoute(p.catName)" [routerLinkActive]="['active']">{{p.catName}}</a>
+                <ul>
+                    <ng-container *ngFor="let q of GetSubgaterotyModelResponse">
+                        <ng-container *ngIf="p.catId==q.catId">
+                            <li>
+                                <a  (click)="changeRouteSubCategory(q.subCategoryName)"
+                                    [routerLinkActive]="['active']"
+                                    *ngIf="p.catId==q.catId">{{q.subCategoryName}}</a>
+                                <!-- <ul>
+                                    <ng-container *ngFor="let eachMenu of MenuResponse">
+                                        <li *ngIf="eachMenu.serviceID == q.serviceID">
+                                            <a (click)="changeRouteSubCategory(q.subCategoryName)"
+                                                [routerLinkActive]="['active']"
+                                                *ngIf="p.catId==q.catId">{{eachMenu.subServiceName}}</a>
+                                        </li>
+                                    </ng-container>
+                                </ul> -->
+                            </li>
+                        </ng-container>
+                    </ng-container>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <!-- Responsive Menu End -->
+
+
+
+<!-- Header Area Start -->
+<header class="construct-header-area" >
+    <!-- <div class="header-top-area">
+        
+        <div class="container">
+          
+
+            <div class="row">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.linkedin.com/company/27170558/admin/" target="_blank"><img 
+                           style="height: 25px;padding-left: 44%;margin-top: 12px;"
+                            src="../../../../assets/Slider/link.png" alt="site logo"></a>
+                </div>
+               
+            </div>
+        </div>
+    </div> -->
+    <div class="header-logo-area"  >
+        <div class="container">
+            <div class="row hidemobile">
+                <div class="col-sm">
+                        <div class="construct-logo">
+                            <a class="animated fadeInUp">
+                                <img class="imgCLass" src="../../../../assets/Slider/menziesHeaderlogo.jpg" alt="site logo" />
+                            </a>
+                        </div>
+                </div>
+              <div class="col-sm">
+                <h5 class="titleclass" style="margin-top: 10px;"><b>People. Passion. Pride.</b></h5>
+              </div>
+            </div>
+                <!-- <div class="col-md-2">
+                    <div class="construct-logo">
+                        <a class="animated fadeInUp">
+                            <img style="height: 55px;color: #1e3669; padding: 2px; border-radius: 6px;"
+                                src="../../../../assets/Slider/Menzieslogo.png" alt="site logo" />
+                        </a>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-9">
+                    <div class="logoright-section">
+                        <div class="single-logo-right">
+                            <div class="logo-right-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="logo-right-text">
+                                <h4>{{callus}}</h4>
+                                <p [innerHTML]="callusDetail"></p>
+                            </div>
+                        </div>
+                        <div class="single-logo-right">
+                            <div class="logo-right-icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="logo-right-text">
+                                <h4>{{mailus}}</h4>
+                                <p [innerHTML]="maildetail"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+        </div>
+    </div>
+    <div class="container mainmenu-area main" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="construct-logo">
+                    <a class="animated fadeInUp">
+                        <img class="imgCLass" src="../../../../assets/Slider/Menzieslogo.png" alt="site logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5 class="titleclass" style="margin-top: 10px;">People. Passion. Pride.</h5>
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="mainmenu">
+                        <ul id="construct_navigation">
+                            <li class="" *ngFor="let p of categoryModelResponse">
+                                <a (click)="changeRoute(p.catName)" [routerLinkActive]="['active']">{{p.catName}}</a>
+                                <ul>
+                                    <ng-container *ngFor="let q of GetSubgaterotyModelResponse">
+                                        <ng-container *ngIf="p.catId==q.catId">
+                                            <li>
+                                                <a (click)="changeRouteSubCategory(q.subCategoryName)"
+                                                    [routerLinkActive]="['active']"
+                                                    *ngIf="p.catId==q.catId">{{q.subCategoryName}}</a>
+                                                <!-- <ul>
+                                                    <ng-container *ngFor="let eachMenu of MenuResponse">
+                                                        <li *ngIf="eachMenu.serviceID == q.serviceID">
+                                                            <a (click)="changeRouteSubCategory(q.subCategoryName)"
+                                                                [routerLinkActive]="['active']"
+                                                                *ngIf="p.catId==q.catId">{{eachMenu.subServiceName}}</a>
+                                                        </li>
+                                                    </ng-container>
+                                                </ul> -->
+                                            </li>
+                                        </ng-container>
+                                    </ng-container>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="col-md-2">
+                    <div class="search_icon" data-toggle="modal" data-target="#myModal">
+                        <!-- <i class="fa fa-search"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Area End -->

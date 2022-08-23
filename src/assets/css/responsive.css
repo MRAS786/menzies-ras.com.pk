@@ -1,0 +1,589 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.construct-main-caption h2 {
+		font-size: 35px
+	}
+	.construct-about-bottom-area {
+		background: rgba(0, 0, 0, 0) url() no-repeat scroll 65% 0 / cover;
+	}
+	.construct-hire-left>h3 {
+		left: 0
+	}
+	.hire-icon {
+		display: none
+	}
+	.single-blog .blog-heading>h3 {
+		font-size: 17px
+	}
+	.blog-comnt>p {
+		font-size: 13px;
+		margin-right: 2px
+	}
+	.project-right-widget span {
+		width: 30%
+	}
+	.project-desc>h3,
+	.project-right-widget>h3 {
+		font-size: 20px
+	}
+	.project-right-widget>h2 {
+		font-size: 23px
+	}
+	.notfound>h3 {
+		font-size: 20px
+	}
+	.product-button>a {
+		padding: 5px 7px
+	}
+	.single-product-text {
+		padding: 10px
+	}
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	html,
+	body {
+		overflow-x: hidden
+	}
+	.construct-logo img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.logoright-section {
+		padding-top: 3px
+	}
+	.header-logo-area {
+		padding: 30px 0 55px;
+	}
+	.mainmenu li>a {
+		padding: 14px 8px
+	}
+	.search_icon {
+		margin-top: 15px
+	}
+	.project-img-overlay>p {
+		display: none
+	}
+	.construct-hire-area .construct-hire-left::before {
+		left: -200px
+	}
+	.section-heading {
+		width: 100%
+	}
+	.element-item {
+		width: 50%
+	}
+	.construct-hire-right {
+		text-align: center
+	}
+	.quote-star>ul {
+		text-align: left
+	}
+	.single-testimonial {
+		width: 100%
+	}
+	.single-footer img {
+		width: 100%
+	}
+	.insta-post img {
+		width: 100%
+	}
+	.project-right-widget>h2 {
+		font-size: 18px
+	}
+	.project-desc>h3,
+	.project-right-widget>h3 {
+		font-size: 18px
+	}
+	.project-right-widget {
+		padding: 10px
+	}
+	.project-right-widget>p:last-child {
+		display: none
+	}
+	.notfound>form {
+		width: 70%
+	}
+	.single-shipping input {
+		margin-bottom: 10px
+	}
+	.single-product-text {
+		padding: 15px
+	}
+	.single-product-text>h3 {
+		font-size: 16px
+	}
+	.product-price>h3 {
+		font-size: 18px
+	}
+	.product-price {
+		margin: 10px 0
+	}
+	.product-rating {
+		float: none
+	}
+	.product-button>a {
+		display: block;
+		font-size: 11px;
+		margin-right: 0;
+		margin-top: 5px;
+		text-align: center
+	}
+	.product-button>a {
+		padding: 5px 8px
+	}
+	.instagram li {
+		width: 25%
+	}
+	.construct-hire-area .construct-hire-left::before {
+		background: transparent
+	}
+	.hire-overlay {
+		display: none
+	}
+	.hire-icon {
+		display: none
+	}
+	.construct-hire-left>h3 {
+		left: 0
+	}
+	.construct-hire-right a {
+		position: relative;
+		z-index: 999999;
+		margin: 55px 0
+	}
+	.footer-social li a {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 13px
+	}
+	.contact-details i {
+		margin: 0
+	}
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+	html,
+	body {
+		overflow-x: hidden
+	}
+	.construct-logo img {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		width: 65%;
+	}
+	.header-top-overlay {
+		display: none
+	}
+	.header-top-left {
+		text-align: center
+	}
+	.header-top-right {
+		padding-bottom: 10px
+	}
+	.header-top-right a:hover {
+		color: #fbb908
+	}
+	.header-top-right>ul {
+		text-align: center;
+		padding-top: 0
+	}
+	.logoright-section {
+		display: none
+	}
+	.mainmenu {
+		display: none
+	}
+	.construct-responsive-menu {
+		display: block
+	}
+	.construct-main-slide {
+		height: 450px
+	}
+	.construct-main-caption h2 {
+		font-size: 30px
+	}
+	.section-heading {
+		width: 100%
+	}
+	.section-heading>h2 {
+		font-size: 28px
+	}
+	.project-btn>a {
+		display: block;
+		margin: 5px 0
+	}
+	.element-item {
+		width: 100%
+	}
+	.hire-icon {
+		display: none
+	}
+	.construct-hire-left>h3 {
+		left: 0
+	}
+	.construct-hire-left,
+	.construct-hire-right {
+		text-align: center
+	}
+	.quote-right .section-heading {
+		text-align: center;
+		width: 100%
+	}
+	.quote-left {
+		margin-top: 30px
+	}
+	.single-testimonial {
+		width: 100%
+	}
+	.single-footer img {
+		width: 70%
+	}
+	.single-footer {
+		margin: 30px 0
+	}
+	.insta-post img {
+		width: 100%
+	}
+	.copyright-left {
+		text-align: center
+	}
+	.copyright-right {
+		display: none
+	}
+	.about-page-left {
+		margin-bottom: 30px
+	}
+	.project-btn {
+		margin-top: 0
+	}
+	.breadcromb>h2 {
+		font-size: 28px
+	}
+	.project-slider .owl-next {
+		top: 30%
+	}
+	.project-slider .owl-prev {
+		top: 30%
+	}
+	.single-project-right {
+		margin-top: 30px
+	}
+	.project-right-widget>h2 {
+		font-size: 26px
+	}
+	.project-single-item {
+		margin-top: 30px
+	}
+	.single-service-right {
+		margin-top: 50px
+	}
+	.tab-content {
+		margin-top: 20px
+	}
+	.notfound>h2 {
+		font-size: 90px;
+		line-height: 90px
+	}
+	.coupon-cart-left input[type="text"] {
+		width: 55%
+	}
+	.notfound>form {
+		width: 100%
+	}
+	.coupon-cart-right {
+		text-align: center;
+		margin-top: 20px
+	}
+	.single-shipping button {
+		float: left
+	}
+	.single-shipping input {
+		margin: 5px 0
+	}
+	.margin-top {
+		margin-top: 50px
+	}
+	.shorting form {
+		float: none;
+		text-align: center;
+		margin-top: 20px
+	}
+	.shorting p {
+		text-align: center
+	}
+	.single-pro-page-desc {
+		margin-top: 20px
+	}
+	.pagination {
+		margin: 40px 0 0
+	}
+	.blog-page-post .blog-heading {
+		padding: 20px 20px 0
+	}
+	.post-share-left {
+		text-align: center;
+		margin-bottom: 20px
+	}
+	.post-share-right {
+		text-align: center
+	}
+	.single-comment-box.reply-comment {
+		margin-left: 50px
+	}
+	.construct-leave-comment input[type="text"],
+	.construct-leave-comment input[type="email"] {
+		width: 100%
+	}
+	.construct-leave-comment textarea {
+		width: 100%
+	}
+	.construct-contact-desc>h3 {
+		margin-bottom: 10px;
+		font-size: 21px
+	}
+	.construct-contact-form-right {
+		margin-top: 50px;
+	}
+	.coupon-cart-left {
+		text-align: center;
+		margin-top: 20px
+	}
+	.coupon-cart-left input[type="text"] {
+		width: 45%
+	}
+	.coupon-cart-left input[type="submit"] {
+		margin-left: 0
+	}
+	.checkout-form-right {
+		margin-bottom: 50px
+	}
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	html,
+	body {
+		overflow-x: hidden
+	}
+	.construct-logo img {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		width: 55%;
+	}
+	.header-top-overlay {
+		display: none
+	}
+	.header-top-left {
+		text-align: center
+	}
+	.header-top-right a:hover {
+		color: #fbb908
+	}
+	.header-top-right {
+		padding-bottom: 10px
+	}
+	.header-top-right>ul {
+		text-align: center;
+		padding-top: 0
+	}
+	.logoright-section {
+		display: none
+	}
+	.mainmenu {
+		display: none
+	}
+	.construct-responsive-menu {
+		display: block
+	}
+	.construct-main-slide {
+		height: 450px
+	}
+	.construct-main-caption h2 {
+		font-size: 35px
+	}
+	.section-heading {
+		width: 100%
+	}
+	.section-heading>h2 {
+		font-size: 28px
+	}
+	.project-btn>a {
+		display: block;
+		margin: 5px 0
+	}
+	.element-item {
+		width: 100%
+	}
+	.hire-icon {
+		display: none
+	}
+	.construct-hire-left>h3 {
+		left: 0
+	}
+	.construct-hire-left,
+	.construct-hire-right {
+		text-align: center
+	}
+	.quote-right .section-heading {
+		text-align: center;
+		width: 100%
+	}
+	.quote-left {
+		margin-top: 30px
+	}
+	.single-testimonial {
+		width: 100%
+	}
+	.single-footer img {
+		width: 55%
+	}
+	.single-footer {
+		margin: 30px 0
+	}
+	.insta-post img {
+		width: 100%
+	}
+	.copyright-left {
+		text-align: center
+	}
+	.copyright-right {
+		display: none
+	}
+	.about-page-left {
+		margin-bottom: 30px
+	}
+	.project-btn {
+		margin-top: 0
+	}
+	.breadcromb>h2 {
+		font-size: 34px
+	}
+	.project-slider .owl-next {
+		top: 30%
+	}
+	.project-slider .owl-prev {
+		top: 30%
+	}
+	.single-project-right {
+		margin-top: 30px
+	}
+	.project-right-widget>h2 {
+		font-size: 26px
+	}
+	.project-single-item {
+		margin-top: 30px
+	}
+	.single-service-right {
+		margin-top: 50px
+	}
+	.tab-content {
+		margin-top: 20px
+	}
+	.notfound>h2 {
+		font-size: 90px;
+		line-height: 90px
+	}
+	.coupon-cart-left input[type="text"] {
+		width: 55%
+	}
+	.coupon-cart-right {
+		text-align: right;
+		margin-top: 20px
+	}
+	.single-shipping button {
+		float: left
+	}
+	.single-shipping input {
+		margin: 5px 0
+	}
+	.margin-top {
+		margin-top: 50px
+	}
+	.shorting form {
+		float: none;
+		text-align: center;
+		margin-top: 20px
+	}
+	.shorting p {
+		text-align: center
+	}
+	.single-pro-page-desc {
+		margin-top: 20px
+	}
+	.pagination {
+		margin: 40px 0 0
+	}
+	.blog-page-post .blog-heading {
+		padding: 20px 20px 0
+	}
+	.post-share-left {
+		text-align: center;
+		margin-bottom: 20px
+	}
+	.post-share-right {
+		text-align: center
+	}
+	.single-comment-box.reply-comment {
+		margin-left: 50px
+	}
+	.construct-leave-comment input[type="text"],
+	.construct-leave-comment input[type="email"] {
+		width: 100%
+	}
+	.construct-leave-comment textarea {
+		width: 100%
+	}
+	.construct-contact-desc>h3 {
+		margin-bottom: 10px;
+		font-size: 21px
+	}
+	.single-about-list {
+		display: block;
+		overflow: hidden;
+	}
+	.instagram li {
+		width: 16%
+	}
+	.construct-contact-form-right {
+		margin-top: 50px;
+	}
+	.hire-overlay {
+		background: #fbb908 none repeat scroll 0 0;
+		border-width: 0;
+		height: 100%;
+		width: 100%;
+	}
+	.single-abt-img {
+		margin-top: 23px
+	}
+	.notfound>form {
+		width: 100%
+	}
+	.coupon-cart-left input[type="text"] {
+		width: 45%
+	}
+	.coupon-cart-left input[type="submit"] {
+		margin-left: 0
+	}
+	.coupon-cart-left {
+		display: none
+	}
+	.checkout-form-right {
+		margin-bottom: 50px
+	}
+}
+

@@ -1,0 +1,93 @@
+<img src="../../../../assets/Slider/service-banner.jpg" style="width: 100%;" class="" alt="Ground handling"
+    loading="lazy">
+<!-- <img *ngIf="showHideCargoHServiceSlider" src="../../../../assets/Slider/cargo-slider-min.jpg" style="width: 100%;" class="" alt="Ground handling" loading="lazy">
+    <img *ngIf="showHideTicktServiceSlider" src="../../../../assets/Slider/ticketing-slider.jpg" style="width: 100%;" class="" alt="Ground handling" loading="lazy">
+    <img *ngIf="showHideCharterServiceSlider" src="../../../../assets/Slider/ticketing-slider.jpg" style="width: 100%;" class="" alt="Ground handling" loading="lazy"> -->
+<div class="container is-disktop-view">
+    <div class="row">
+        <div class="col-12  d-flex justify-content-center">
+            <div class="ground-card" style="bottom: 20px; z-index: 1;" >
+                <div class="card-body">
+                    <div class="">
+                        <div>
+                            <h1 class="title" style="font-weight: bold;margin-bottom: 2rem;">{{servicename}}</h1>
+                            <p style="word-spacing: 2px;">{{serviceDescription}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-3">
+            <ng-container *ngFor="let p of subServiceModelResponse">
+                <ng-container *ngIf="p.uniqueNo % 2 == 1">
+                    <div class="col-md-7">
+                        <div class="content-ground cardzindex" >
+                            <div class="content-image-repeater__content__inner">
+                                <h3 class="" style="font-weight: bold;margin-bottom: 2rem;">{{p.subServiceName}}</h3>
+                                <div class="content-image-repeater__text">
+                                    <p style="word-spacing: 2px;" [innerHTML]="p.subServiceDetails | safeHtml"></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="{{p.subServiceImage}}" class="img-sttng" alt="Ground handling" loading="lazy">
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="p.uniqueNo % 2 == 0">
+                    <div class="col-md-5">
+                        <img src="{{p.subServiceImage}}" class="img-sttng-2" alt="Ground handling" loading="lazy">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="content-ground cardzindex" >
+                            <div class="content-image-repeater__content__inner">
+                                <h3 class="" style="font-weight: bold;margin-bottom: 2rem;">{{p.subServiceName}}</h3>
+                                <div class="content-image-repeater__text">
+                                    <p style="word-spacing: 2px;" [innerHTML]="p.subServiceDetails">
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </ng-container>
+
+        </div>
+    </div>
+</div>
+
+<!--New Code Mobile View-->
+<div class="container is-mobile-view">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="title" style="font-weight: bold">{{servicename}}</h2>
+                    <p style="word-spacing: 2px;">{{serviceDescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-container *ngFor="let p of subServiceModelResponse">
+        <ng-container>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="" style="font-weight: bold;margin-bottom: 2rem;">{{p.subServiceName}}</h3>
+                            <p style="word-spacing: 2px;" [innerHTML]="p.subServiceDetails | safeHtml"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="{{p.subServiceImage}}" class="img-sttng" alt="Ground handling" loading="lazy">
+                </div>
+            </div>
+        </ng-container>
+    </ng-container>
+</div>

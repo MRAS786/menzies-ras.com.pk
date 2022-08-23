@@ -1,0 +1,263 @@
+<app-slider></app-slider>
+<div class="container">
+    <div class="row statdea">
+        <div class="col-md-12">
+            <div class="card bgcolor" style="bottom: 50px; z-index: 1;">
+                <div class="card-body">
+                    <ng-container *ngFor="let p of statsResponse">
+                        <div class="col-sm-3 float-left">
+
+                            <div class="statWrap">
+                                <div class="statdea">
+                                    <a class="image-zoom">
+                                        <figure class="ratio-image card-grid__image">
+                                            <div class="default">
+                                                {{p.line1}}
+                                            </div>
+                                            <div class="fir">
+                                               <b>{{p.line2}}</b> 
+                                            </div>
+                                            <div class="default">
+                                                {{p.line3}}
+                                            </div>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="card shadow"
+                style="bottom: 16px; z-index: 1;border-bottom: 4px solid;border-bottom-color: #1e3669;padding: 0px 30px 0px 30px;"
+              >
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <h4 class="title" style="font-weight: bold;">Our Services</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6 card-grid__item" *ngFor="let p of serviceModelResponse">
+            <a class="image-zoom">
+                <figure class="ratio-image card-grid__image">
+                    <img width="560" height="300" src="{{p.serviceImage}}" class="imgsizemobile" alt="Ground handling"
+                        loading="lazy">
+                </figure>
+            </a>
+            <div class="xyzClass card-grid__content" >
+                <figure>
+                    <img src="../../../assets/Services/icon2.jpg" class="attachment-icon size-icon" alt=""
+                        loading="lazy" height="20.54" width="21.1">
+                </figure>
+                <h4>{{p.serviceName}} </h4>
+                <a class="btn--action" (click)="loadSubService(p.serviceID)">Find out more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Clients -->
+<div class="container mt-3">
+    <div class="row ">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="card"
+                style="bottom: 38px; z-index: 1;border-bottom: 4px solid;border-bottom-color: #1e3669;padding: 0px 30px 0px 30px;"
+                >
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <h4 class="title" style="font-weight: bold;">Latest News</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <ng-container *ngFor="let p of newsModelResponse">
+            <div class="col-md-4 mt-4">
+                <a class="image-zoom">
+                    <figure class="ratio-image card-grid__image">
+                        <img class="imgsizemobile img-thumbnail" width="350" height="300" src="{{p.newsImage}}"  alt="Ground handling"
+                            loading="lazy" [routerLink]="'/News'">
+                    </figure>
+                </a>
+                <div class="xyzClass card-grid__content1 ">
+                    <h5 [innerHTML]="p.newStr" style="font-size: 16px;"></h5>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+
+</div>
+<!-- Our Clients -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="card"
+                style=" z-index: 1;border-bottom: 4px solid;border-bottom-color: #1e3669;padding: 0px 30px 0px 30px;"
+              >
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <h4 class="title" style="font-weight: bold;">Our Clients</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="clients" class="section-bg mt-4">
+    <div class="container">
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp"
+            style="visibility: visible; animation-name: fadeInUp;">
+            <ng-container *ngFor="let p of clientModelResponse">
+                <ng-container *ngIf="p.isCorporate==false">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo" >
+                           <img src="{{p.clientLogo}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</section>
+
+<!-- Our Corporate Clients -->
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="card"
+                style="bottom: 38px; z-index: 1;border-bottom: 4px solid;border-bottom-color: #1e3669;padding: 0px 30px 0px 30px;"
+               >
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <h4 class="title" style="font-weight: bold;">Corporate Clients</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="clients" class="section-bg ">
+    <div class="container">
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp"
+            style="visibility: visible; animation-name: fadeInUp;">
+
+            <ng-container *ngFor="let p of clientModelResponse">
+                <ng-container *ngIf="p.isCorporate==true">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <img
+                                    src="{{p.clientLogo}}" class="img-fluid" alt=""> 
+                        </div>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</section>
+
+<!-- Our Certificate -->
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="card"
+                style="bottom: 38px; z-index: 1;border-bottom: 4px solid;border-bottom-color: #1e3669;padding: 0px 30px 0px 30px;"
+              >
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <h4 class="title" style="font-weight: bold;">Certification</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="clients" class="section-bg ">
+    <div class="container">
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp"
+            style="visibility: visible; animation-name: fadeInUp;">
+            <ng-container *ngFor="let p of certificateModelResponse">
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="{{p.certificateLogo}}" class="img-fluid" alt="">
+                        <!-- <a data-toggle="modal" data-target="#CertificateModal" ><img
+                                src="{{p.certificateLogo}}" class="img-fluid" alt=""></a> -->
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
+<!-- Large modal -->
+<!-- Button trigger modal -->
+<div class="modal fade  come-from-modal right" id="ClientModal" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>{{ClientHeading}}</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ClientLogo}}" class="imgClass" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <p class="pl-5 pt-2">{{ClientDesc}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade come-from-modal right" id="CertificateModal" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>{{CertHeading}}</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{CertLogo}}" class="imgClass" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <p class="pl-5 pt-2">{{CertDesc}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

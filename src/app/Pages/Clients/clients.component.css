@@ -1,0 +1,336 @@
+.carousel-caption {
+    position: absolute;
+    right: 59%;
+    bottom: 5.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Menzies */
+
+.card-grid__content {
+    position: relative;
+    width: 65%;
+    border-radius: 0px !important;
+    border: 6px;
+    bottom: 100px;
+    left: 0px;
+    padding: 7px 8px 17px 4px;
+    background: white;
+}
+
+.action-link a {
+    background: url(../../../assets/Slider/arrow--turquoise--right.svg) no-repeat right center;
+    background-size: auto 1.4rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #00bcc8;
+    font-weight: 700;
+    padding: 0.6rem 1.5rem 0.6rem 0;
+}
+
+.action-link a:before {
+    content: "";
+    width: 0%;
+    background: #00bcc8;
+    padding-left: 0;
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    height: 1.4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.action-link a:after,
+.btn--action:after,
+a.btn--download:after {
+    content: "";
+    width: 0%;
+    padding: 0 29% 0 0%;
+    height: 3px;
+    display: block;
+    background: #00bcc8;
+    margin-left: 0%;
+    transition: all 0.3s ease-in-out;
+    clear: both;
+    /* position: absolute; */
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+}
+
+.xyzClass {
+    margin-top: -98px;
+}
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%
+}
+
+#clients .clients-wrap {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin-bottom: 30px
+}
+
+#clients .client-logo {
+    padding: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #d6eaff;
+    border-bottom: 1px solid #d6eaff;
+    overflow: hidden;
+    background: #fff;
+    height: 160px
+}
+
+#clients img {
+    transition: all 4s ease-in-out
+}
+
+.come-from-modal.left .modal-dialog,
+.come-from-modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 1100px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.come-from-modal.left .modal-content,
+.come-from-modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0px;
+}
+
+.come-from-modal.left .modal-body,
+.come-from-modal.right .modal-body {
+    padding: 15px 15px 20px;
+}
+
+.come-from-modal.right.fade .modal-dialog {
+    right: 0px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-in;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-in;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-in;
+    transition: opacity 0.3s linear, right 0.3s ease-in;
+}
+
+.modal.left.fade .modal-dialog {
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog {
+    left: 0;
+}
+
+.come-from-modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+.header {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.card-grid__content1 {
+    position: relative;
+    width: 90%;
+    border-radius: 0px !important;
+    top: 30px;
+    border: 6px;
+    left: 0px;
+    padding: 7px 8px 17px 4px;
+    background: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-grid__content {
+        left: 0px;
+    }
+}
+
+a,
+a label {
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    .modal-dialog {
+        max-width: 900px;
+        margin: 1.75rem auto;
+    }
+}
+
+.imgClass {
+    max-width: 40%;
+    height: 57px
+}
+
+.bgcolor {
+    background-color: #1e3669;
+    color: #fff;
+}
+
+.statdea:after {
+    box-sizing: border-box;
+    height: 57px;
+    width: 1px;
+    background: #DEE1E3;
+    position: absolute;
+    right: -24px;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.statdea {
+    font-size: 21px;
+    text-align: center;
+}
+
+.fir {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: inherit;
+    font-weight: 500;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+}
+
+.content {
+    margin-left: 75px;
+    font-size: 30px;
+}
+
+.sticky-bx {
+    position: fixed;
+    right: 0px;
+    top: 20%;
+    padding: 16px;
+    width: 60px;
+    direction: rtl;
+    z-index: 1;
+}
+
+.hover-bx {
+    direction: ltr;
+    display: inline-block;
+    background-color: #1e3669;
+    white-space: nowrap;
+}
+
+.ico-bx {
+    display: inline-block;
+    background-color: white;
+}
+
+.ico-txt {
+    margin-left: 10px;
+    padding: 0 6px;
+    display: none;
+}
+
+.hover-bx:hover .ico-txt {
+    display: table-cell;
+    position: relative;
+}
+
+.image-zoom {
+    overflow: hidden;
+    display: block;
+}
+
+.image-zoom figure,
+.image-zoom>a {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-zoom figure:hover,
+.image-zoom>a:hover {
+    transform: scale(1.1);
+}
+
+.ICON {
+    font-size: xx-large;
+    cursor: pointer !important;
+}
+
+.modal-xl {
+    max-width: 450px !important;
+}
+
+label {
+    display: unset;
+    margin-bottom: 0.5rem;
+}
+.container{
+   overflow: hidden;
+}

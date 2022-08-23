@@ -1,0 +1,120 @@
+.newsDes {
+    width: 550px;
+    height: 500px;
+    padding: 10px;
+}
+
+.onScroll {
+    overflow-x: hidden;
+    height: 500px;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 77, 178);
+    outline: 1px solid rgb(224, 224, 224);
+}
+
+.fnt-sttng {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 740px) and (min-width: 360px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 812px) and (min-width: 375px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 869px) and (min-width: 412px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 736px) and (min-width: 414px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 740px) and (min-width: 412px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 653px) and (min-width: 280px) {
+    .resp-mob {
+        text-align: center;
+    }
+
+    .fnt-sttng {
+        text-align: center;
+    }
+}

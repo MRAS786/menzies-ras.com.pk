@@ -1,0 +1,135 @@
+.ground-card {
+    position: relative;
+    border-radius: 0px !important;
+    border: 6px;
+    bottom: 177px;
+    left: 0px;
+    padding: 7px 8px 17px 4px;
+    background: white;
+}
+
+.content-ground {
+    position: relative;
+    top: 46px;
+    border-radius: 0px !important;
+    border: 6px;
+    left: 33px;
+    padding: 7px 8px 17px 4px;
+    background: white;
+    padding: 20px;
+}
+
+.content-groundright {
+    position: relative;
+    top: 46px;
+    border-radius: 0px !important;
+    border: 6px;
+    left: 30px;
+    padding: 7px 8px 17px 4px;
+    background: white;
+}
+
+li {
+    font-size: 16px;
+    margin-left: 18px;
+    list-style-type: square;
+    line-height: 2;
+    margin-left: 45px;
+}
+
+.ul {
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: none;
+}
+.img-sttng {
+    margin-left: -68px;
+    height: 360px;
+    width: 520px;
+}
+.img-sttng-2{
+    margin-left: 14px;
+    height:360px;
+    width: 520px;
+}
+.card{
+    border: 0px;
+    border-radius: 0px;
+}
+
+.is-mobile-view{
+    display: none;
+}
+
+@media only screen and (max-width: 740px) and (min-width: 360px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 812px) and (min-width: 375px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 869px) and (min-width: 412px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 736px) and (min-width: 414px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 740px) and (min-width: 412px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}
+@media only screen and (max-width: 653px) and (min-width: 280px) {
+    .is-mobile-view{
+        display: block;
+    }
+    .is-disktop-view{
+        display: none;
+    }
+}

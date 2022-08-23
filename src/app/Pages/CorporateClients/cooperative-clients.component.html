@@ -1,0 +1,36 @@
+
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col-md-12  d-flex justify-content-center">
+            <div class="card"
+                style="z-index: 1;border-bottom: 4px solid;border-bottom-color: #1e3669;padding: 0px 30px 0px 30px;"
+              >
+                <div class="card-body">
+                    <div class="text-center">
+                        <div>
+                            <h4 class="title" style="font-weight: bold;">Corporate Clients</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="clients" class="section-bg mt-5">
+    <div class="container">
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp"
+            style="visibility: visible; animation-name: fadeInUp;">
+
+            <ng-container *ngFor="let p of clientModelResponse">
+                <ng-container *ngIf="p.isCorporate==true">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="client-logo">
+                            <a data-toggle="modal" data-target="#ClientModal" (click)="seeDescription(p)"><img
+                                    src="{{p.clientLogo}}" class="img-fluid" alt=""> </a>
+                        </div>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</section>

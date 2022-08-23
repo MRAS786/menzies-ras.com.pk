@@ -1,0 +1,74 @@
+<!-- Footer Area Start -->
+<footer class="construct-footer-area">
+    <div class="construct-footer-top-area section_50">
+        <div class="container">
+            <div class="row ">
+                <ng-container *ngFor="let p of ServicesResponse">
+                    <div class="col-md-2">
+                        <div class="single-footer">
+                            <h6 class="footermainli mt-1">{{p.serviceName}}</h6>
+                            <ul class="footer-inner">
+                                <li class="footerliststyle" *ngFor="let f of MenuResponse">
+                                    <ng-container *ngIf="p.serviceID == f.serviceID ">
+                                        <a (click)="loadSubService(f.serviceID)"
+                                            class="subServiceName">{{f.subServiceName}}</a>
+                                    </ng-container>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-container>
+            
+                <div class="col-md-3 ">
+                    <div class="single-footer ">
+                       
+                            <a href="https://www.linkedin.com/company/27170558/admin/" target="_blank"> <img class="img-thumbnail bg bg-white"  src="../../../../assets/Slider/linkedin-logoooo.png" height="75" width="75"
+                                 alt="footer logo"  />
+                             </a>
+                        
+                        <ul>
+                            <li class="m-2">
+                                <a href="https://menziesaviation.com/anti-slavery-statement/" target="_blank"
+                                    class="subServiceName">Anti-slavery statement</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="https://menziesaviation.com/terms/" class="subServiceName"
+                                    target="_blank">Terms</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="https://menziesaviation.com/privacy/" class="subServiceName"
+                                    target="_blank">Privacy</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="https://menziesaviation.com/third-party-code-of-conduct/" target="_blank"
+                                    class="subServiceName">Third party code of conduct</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1 pull-right d-flex justify-content-end">
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="construct-footer-bottom-area section_15">
+        <div>
+            <hr class="footerhr">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-left">
+                        <p class="pull-right" style="font-weight: bolder;">People. Passion. Pride.</p>
+                        <br>
+                        <p class="pull-right">Since 1833.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>

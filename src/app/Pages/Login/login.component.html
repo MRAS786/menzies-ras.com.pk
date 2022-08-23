@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12 d-flex justify-content-center mt-5">
+        <div class="card">
+            <div class="card-deck">
+                <div class="card-body">
+                    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+                        <input type="text" class="form-control" placeholder="Username" formControlName="Username" /><br>
+                        <input type="password" class="form-control" placeholder="Password" formControlName="Password" /><br>
+                        <button type="submit" name="submit" value="submit" class="btn btn-sm w-50 bg-blue">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

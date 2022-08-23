@@ -1,0 +1,13 @@
+a,
+a label {
+    cursor: pointer;
+}
+
+.subServiceName{
+    font-size: 14px;
+}
+@media only screen and (max-width: 767px){
+    .single-footer img {
+        width: 30%;
+    }
+}

@@ -1,0 +1,81 @@
+
+<img src="../../../assets/Slider/careers.jpg" style="width: 100%;" class="" alt="Ground handling"
+    loading="lazy">
+<div class="container">
+    <div class="row">
+        <div class="col-12  d-flex justify-content-center">
+            <div class="ground-card tp-sttng">
+                <div class="card-body">
+                    <div class="">
+                        <div>
+                            <h1 class="title" style="font-weight: bold;margin-bottom: 2rem;">About Us</h1>
+                            <p [innerHTML]="aboutDetail"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-md-5 ml-4">
+            <div class="single-footer">
+                <h6 class="footermainli">Our Locations</h6>
+                <ul class="footer-inner ml-3">
+                    <li class="locationsstyle" *ngFor="let p of serviceModelResponse">
+                        <label class="subServiceName text-uppercase">{{p.stationName}}</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 " style="background-color: #fff;">
+
+            <img src="../../../assets/Slider/greenmap.png" class="image-fluid mt-2" alt="Snow" style="width:70%;">
+            <div class="Islamabad">
+                <a type="button" class="fa fa-map-marker fa-1x text-white" title="Islamabad" data-toggle="modal"
+                    data-target="#islamabad">
+                    <!-- <span style="font-size:14px;">Islamabad</span> -->
+                </a>
+            </div>
+            <div class="Peshawar">
+                <a type="button" class="fa fa-map-marker fa-1x text-white" title="Peshawar" data-toggle="modal"
+                    data-target="#Peshawar">
+                    <!-- <span style="font-size:14px;">Peshawar</span> -->
+                </a>
+            </div>
+            <div class="Lahore">
+                <a type="button" class="fa fa-map-marker fa-1x text-white" title="Lahore" data-toggle="modal"
+                    data-target="#Lahore">
+                    <!-- <span style="font-size:14px;">Lahore</span> -->
+                </a>
+            </div>
+        
+        <div class="Faisalabad">
+            <a type="button" class="fa fa-map-marker fa-1x text-white" title="  Faisalabad" data-toggle="modal"
+                data-target="#Faisalabad">
+                <!-- <span style="font-size:14px;">Faisalabad</span> -->
+            </a>
+        </div>
+        <div class="Multan">
+            <a type="button" class="fa fa-map-marker fa-1x text-white" title="Multan" data-toggle="modal"
+                data-target="#Multan">
+                <!-- <span style="font-size:14px;">Multan</span> -->
+            </a>
+        </div>
+        <div class="Karachi">
+            <a type="button" href="#Karachi" class="fa fa-map-marker fa-1x text-white" title="Karachi"
+                data-toggle="modal" data-target="#Karachi">
+                <!-- <span style="font-size:14px;">Karachi</span> -->
+            </a>
+        </div>
+        <div class="Quetta">
+            <a type="button" class="fa fa-map-marker fa-1x text-white" title="Quetta" data-toggle="modal"
+                data-target="#Quetta">
+                <!-- <span style="font-size:14px;">Quetta</span> -->
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+

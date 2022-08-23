@@ -1,0 +1,128 @@
+
+<div class="container main-content">
+    <section class="content-wrapper main-content clear-fix">
+        <div class="container mt-3">
+
+            <div class="row">
+                <section class="col-md-9">
+                    <h1 class="page-heading">{{ResponseModel.RequestStationSerive.stationServiceName}}</h1><br>
+                    <div class="row">
+                        <section class="col-sm-3">
+                            <p><img src="{{ResponseModel.RequestStationSerive.stationServiceImage}}"
+                                    class="img-responsive img-xs-float" style="height: 204px;width: 345px;"></p>
+                        </section>
+                        <section class="col-sm-9">
+                            <p>{{ResponseModel.RequestStationSerive.stationDescription}}</p>
+
+                            <strong style="color: #1e3669;font-size: 14px;border-bottom: 2px solid;"><i
+                                    class="fa fa-star"></i>&nbsp;{{uniqueName}} ,</strong> &nbsp;{{uniqueDesignation}}
+
+
+                        </section>
+                    </div>
+
+                    <h2>Statistics</h2>
+                    <div class="station-statistics row ml-1">
+                        <ng-container *ngFor="let p of ResponseModel.statsRequest">
+                            <dl class="stat card col-sm-2">
+                                <dd class="statist">{{p.line1}}</dd>
+                                <dt class="statist2">{{p.line2}}</dt>
+                            </dl>&nbsp;
+                        </ng-container>
+
+                        <!-- <dl class="stat col-sm-3">
+                            <dt>Cargo handled</dt>
+                            <dd>Over 80,000</dd>
+                        </dl> -->
+                    </div>
+                    <div class="airservices-accordion-block">
+                        <h2 class="page-heading">Services</h2>
+                        <div class="panel-group" id="accordion">
+                            <!-- <ng-container *ngFor="let p of subServiceResponse">
+                                <h4 class="panel-title">{{p.subServiceName}}</h4>
+                                <ng-container *ngFor="let s of serviceStationListResponse">
+                                    <ng-container *ngIf="p.subServiceStationId==s.subServiceStationId">
+                                        <ul style="list-style-position:outside">
+                                            <li [innerHTML]="p.subStationServiceDescription"></li>
+                                        </ul>
+                                    </ng-container>
+                                </ng-container>
+                            </ng-container> -->
+                            <ng-container *ngFor="let p of subServiceResponse; let i = index">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        (click)="isCollapsed=i">
+                                        <h4 class="panel-title">{{p.subServiceName}}</h4>
+                                    </div>
+                                    <ng-container *ngFor="let s of serviceStationListResponse">
+                                        <div id="collapse01" class="panel-collapse collapse"
+                                            [id]="'collapseViewMore-' + index" [collapse]="i!==isCollapsed">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ng-container
+                                                        *ngIf="p.subServiceStationId == s.subServiceStationId">
+                                                        <ul class="subserviceslist">
+                                                            <li class="subserviceslist">
+                                                                {{s.subStationServiceDescription}}</li>
+                                                        </ul>
+                                                    </ng-container>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </ng-container>
+                            <!-- Accordian panel start -->
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-3">
+                    <div class="callout">
+                        <h2 class="page-heading"><i class="fa fa-user m-2"></i>Contact us</h2>
+                        <hr>
+                        <select class="form-control formselect" (change)="updateDetail()" [(ngModel)]="contactId">
+                            <option *ngFor="let p of stationcontactModelResponse" [value]="p.contactId">
+                                {{p.contactDesignation}}
+                            </option>
+                        </select>
+                        <ul>
+                            <li class="list-item selectUpdateContent m-2">
+                                <strong style="color: #1e3669;font-size: 14px;"><i
+                                        class="fa fa-star"></i>&nbsp;{{name}}</strong>
+                                <p class="ml-4">
+                                    {{address}}
+                                    <br> Hours : {{workingHour}}
+                                    <br> Days : {{workingDays}}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="callout">
+                        <h2 class="page-heading"><i class="fa fa-globe m-2"></i>Our Locations</h2>
+                        <hr>
+                        <ul>
+                            <li style=" font-size: 14px; margin-left: 10px;  list-style-type: circle;" class="ml-5"
+                                *ngFor="let p of serviceModelResponse">
+                                <a>{{p.stationName}}</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- <div class="callout callout-default">
+                        <h3>Other airports in Pakistan</h3>
+                        <ul>
+                            <li *ngFor="let p of serviceModelResponse">
+                                <a>{{p.stationName}}</a>
+                            </li>
+
+                        </ul>
+                    </div> -->
+                </section>
+            </div>
+        </div>
+
+    </section>
+
+</div>
