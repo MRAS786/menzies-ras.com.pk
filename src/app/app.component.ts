@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'Menzies-RAS';
   @ViewChild('captchaElem') captchaElem: any = ReCaptcha2Component;
   @ViewChild('langInput') langInput: any = ElementRef;
-
+  clicked = false;
   public captchaIsLoaded = false;
   public captchaSuccess = false;
   public captchaIsExpired = false;
@@ -65,6 +65,7 @@ export class AppComponent {
       return;
     }
     this.submitted = true;
+    this.clicked = true;
     if (this.MessageForm.valid) {
    
       let body = {
@@ -73,14 +74,17 @@ export class AppComponent {
         name: this.MessageForm.controls.name.value,
       }
       this.API.PostDataWithoutHeader('/Menzies/SendEMail', body).subscribe(
-        data => {
-          if (data != null) {
-            this.closeMessageModal["first"].nativeElement.click();
+        (data) => {
+          if (data.Status == "OK") {
+            //this.closeMessageModal["first"].nativeElement.click();
             Swal.fire({
               text: data.Message,
               icon: 'success',
               confirmButtonText: 'OK'
             });
+            this.MessageForm.reset();
+            this.clicked = false;
+            document.getElementById('hideModal')?.click();
           }
           else {
           }
@@ -91,6 +95,7 @@ export class AppComponent {
             icon: 'error',
             confirmButtonText: 'OK'
           });
+          this.clicked = false;
         });
     }
   }
