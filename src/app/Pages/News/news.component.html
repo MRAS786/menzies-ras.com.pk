@@ -7,7 +7,7 @@
                     <div class="row mb-5" (click)="ShowNews(p)" style="cursor: pointer;">
                         <div class="col-md-6">
                             <h5 [innerHTML]="p.newStr" class="fnt-sttng"></h5>
-                            <p style="font-size: 14px; font-weight: 600;" class="mt-2" >{{p.createdDate | date}}</p>
+                            <!-- <p style="font-size: 14px; font-weight: 600;" class="mt-2" >{{p.createdDate | date}}</p> -->
                         </div>
                         <div class="col-md-6">
                             <a class="image-zoom">
@@ -26,7 +26,7 @@
             <ng-container *ngIf="showNews">
                 <img width="650" height="400" src="{{imageSRC}}" alt="Ground handling" loading="lazy" class="img-thumbnail">
                 <p [innerHTML]="newsDescription" style="margin-top: 20px;font-size: 14px;"></p>
-                <h5 class="mt-2" style="font-size: 14px;"><b>{{newsCreatedDate | date}}</b></h5>
+                <!-- <h5 class="mt-2" style="font-size: 14px;"><b>{{newsCreatedDate | date}}</b></h5> -->
             </ng-container>
         </div>
     </div>
