@@ -50,7 +50,7 @@ export class NewsComponent implements OnInit {
         if (data != null) {
           
           this.newsModelResponse = data.NewsList;
-          if (data.NewsList.length > 10) {
+          if (data.NewsList.length > 20) {
             this.newsModelResponseReplica = data.NewsList.slice(0, 10);
           }
           else {

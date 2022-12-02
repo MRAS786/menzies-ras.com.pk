@@ -10,8 +10,8 @@ export const environment = {
   //  serverURLLogin: "http://203.82.54.155:8088",
   serverURL: "http://menzies.ras.com.pk/Services/api",
   serverURLLogin: "http://menzies.ras.com.pk/Services"
-  // serverURL: "https://www.menzies-ras.com.pk/Services/api",
-  // serverURLLogin: "https://www.menzies-ras.com.pk/Services/"
+  // serverURL: "http://ras.cargoplus.com.pk/Services/api",
+  // serverURLLogin: "http://ras.cargoplus.com.pk/Services"
 };
 /*
  * For easier debugging in development mode, you can import the following file
