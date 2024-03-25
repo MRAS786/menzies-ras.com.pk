@@ -70,3 +70,25 @@
 #team .team-member .overlay-wrapper2 .overlay i:hover {
 	color:rgba(255, 255, 255, 1);
 }
+.btnClose{
+	border: 1px solid red;
+    border-radius: 50%;
+    width: 9%;
+    height: 25px;
+    background-color: red;
+    color: #fff;
+    border-color: red;
+    margin-top: -13px;
+    outline: none;
+    margin-left: 9px;
+    margin-right: -3px;
+	opacity: 2;
+}
+.para-sttng{
+	font-size: 14px;
+	color: #fff;
+}
+
+.img-block:hover{
+cursor: pointer;
+}

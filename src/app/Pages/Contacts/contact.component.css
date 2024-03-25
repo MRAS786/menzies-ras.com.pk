@@ -54,3 +54,16 @@
     font-size: 14px;
     font-weight: 500;
   }
+
+  .roundedFixedBtn {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #1e3669;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}

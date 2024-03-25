@@ -8,10 +8,11 @@ import { teamModelResponse } from './team.Model';
   templateUrl: './ourteam.component.html',
   styleUrls: ['./ourteam.component.css']
 })
+
 export class OurteamComponent implements OnInit {
-  teamModelResponse:teamModelResponse[];
+  teamModelResponse: teamModelResponse[];
   constructor(private API: ApiService) {
-    this.teamModelResponse=[];
+    this.teamModelResponse = [];
   }
 
   ngOnInit(): void {
@@ -19,7 +20,7 @@ export class OurteamComponent implements OnInit {
     this.callFunc();
     this.getTeam();
   }
-  callFunc(){
+  callFunc() {
     Aos.init({
       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
@@ -62,4 +63,18 @@ export class OurteamComponent implements OnInit {
       });
   }
 
+  showDetail(data: any) {
+    if (data.teamId == 3) {
+      var elem = document.getElementById('btnClickteamID3');
+      if (elem) {
+        elem.click();
+      }
+    }
+    if (data.teamId == 4) {
+      var elem = document.getElementById('btnClickteamID4');
+      if (elem) {
+        elem.click();
+      }
+    }
+  }
 }

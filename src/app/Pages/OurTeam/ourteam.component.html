@@ -28,7 +28,7 @@
 
         <div class="row">
             <div class="col-md-6 col-lg-3" *ngFor="let p of teamModelResponse">
-                <div class="img-block mb-5 text-center">
+                <div class="img-block mb-5 text-center" (click)="showDetail(p)" id="ptrID">
                     <img src="{{p.teamImage}}" class="img-fluid img-thumbnail rounded-circle" alt="image1" style="width: 60%;">
                     <div class="content mt-2">
                         <h4 class="text-center" style="font-size: 20px;">{{p.teamName}}</h4>
@@ -67,3 +67,40 @@
     </div>
 </div>
 
+<button type="button" id="btnClickteamID4" data-toggle="modal"
+data-target="#teamID4" style="display: none;">click</button>
+<div class="modal fade" id="teamID4" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content bg-info">
+            <div class="">
+                <button type="button" class="close btnClose" data-dismiss="modal" aria-label="Close" #closeTaxModal><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body p-2 mb-3 text-center">
+                <p class="para-sttng">For operational queries or information on adhoc flight handling,</p>
+                <p class="para-sttng">please reach out to us at</p>
+                <b style="color:#1e3669;cursor: pointer;font-size: 15px;">operations@menzies-ras.com.pk</b>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" id="btnClickteamID3" data-toggle="modal"
+data-target="#teamID3" style="display: none;">click</button>
+<div class="modal fade" id="teamID3" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content bg-info">
+            <div class="">
+                <button type="button" class="close btnClose" data-dismiss="modal" aria-label="Close" #closeTaxModal><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body p-2 mb-3 text-center">
+                <p class="para-sttng">For commercial queries or information on our services,</p>
+                <p class="para-sttng">please reach out to us at</p>
+                <b style="color:#1e3669;cursor: pointer; font-size: 15px;">commercial@menzies-ras.com.pk</b>
+            </div>
+        </div>
+    </div>
+</div>
